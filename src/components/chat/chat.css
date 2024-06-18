@@ -87,6 +87,34 @@
             /* Border around thumb */
         }
 
+        .message:not(.own) .texts {
+            position: relative;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        
+        .message:not(.own) .texts p {
+            padding: 10px;
+            background-color: rgba(17, 25, 40, 0.3);
+            border-radius: 10px;
+            word-break: break-word;
+            max-width: fit-content;
+             /* Ensure relative positioning */
+        }
+        
+        .message:not(.own) .texts .timestamp {
+            font-size: 10px;
+            background-color: transparent;
+            color: #888;
+            padding-bottom: 2px;
+            position: absolute;
+            bottom: -1.2rem;
+            left: 0; /* Adjusted to align timestamp to the left for opponent's messages */
+        }
+        
+
         .message {
             max-width: 78%;
             display: flex;
@@ -126,10 +154,11 @@
                 }
 
                 p {
-                    padding: 15px;
+                    padding: 10px; /* Adjust padding as needed */
                     background-color: rgba(17, 25, 40, 0.3);
                     border-radius: 10px;
                     word-break: break-word; /* Allow long messages to wrap */
+                    max-width:fit-content; /* Ensure text doesn't overflow parent container */
                 }
 
                 span.timestamp {
@@ -138,18 +167,19 @@
                     position: absolute;
                     bottom: -1.2rem;
                     right: 0;
+                    padding-bottom: 2px;
                 }
             }
         }
 
         .message.own .texts p {
-            background-color: #f2f2f2;
-            color: #333;
+            background-color: #305e635a;
+            color: #ffffff;
         }
 
         .message.own .texts span.timestamp {
-            bottom: unset;
-            top: -1.5rem; /* Adjust position when message is tall */
+             
+            top: unset;
         }
 
         .dateSeparator {
