@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url("/bg2.png");
+  background-image: url("/bg2.jpg");
   background-size: cover;        /* Ensures the image covers the entire background */
   background-repeat: no-repeat;  /* Prevents the image from repeating */
   background-position: center;   /* Centers the image */
@@ -20,7 +20,7 @@ body {
 }
 
 body.bright-mode {
-  background-image: url("/bg3.png");
+  background-image: url("/bg3.jpg");
   color: white;
 }
 
