@@ -50,7 +50,7 @@
             img {
                 width: 20px;
                 height: 20px;
-                transition: transform 1.5s ease;
+                transition: transform 3.5s ease;
             }
         }
     }
