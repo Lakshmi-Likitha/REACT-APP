@@ -2,12 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/logo.png" />
+    <link rel="icon" type="image/svg+xml" href="/url icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Likitha's Chat App</title>
+    <link rel="stylesheet" href="index.css">
   </head>
   <body>
+    <button id="modeToggle" alt="Dark/Bright Modes"></button>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      document.getElementById('modeToggle').addEventListener('click', function() {
+        document.body.classList.toggle('bright-mode');
+      });
+    </script>
   </body>
 </html>
