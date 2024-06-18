@@ -6,16 +6,50 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-body{
-  background-image: url("/bg2.jpg");
+body {
+  background-image: url("/bg2.png");
+  background-size: cover;        /* Ensures the image covers the entire background */
+  background-repeat: no-repeat;  /* Prevents the image from repeating */
+  background-position: center;   /* Centers the image */
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  margin: 0;                     /* Ensures there is no margin around the body */
   color: white;
 }
 
-.container{
+body.bright-mode {
+  background-image: url("/bg3.png");
+  color: white;
+}
+
+#modeToggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-image: url("/dark.png");
+  background-color: transparent;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#modeToggle:hover {
+  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.042);
+  rotate: 180deg;
+  transition-duration: 2s;
+  
+}
+
+.container {
   width: 90vw;
   height: 90vh;
   background-color: rgba(26, 29, 32, 0.75);
@@ -25,7 +59,7 @@ body{
   display: flex;
 }
 
-.loading{
+.loading {
   padding: 50px;
   font-size: 36px;
   border-radius: 10px;
