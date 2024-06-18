@@ -97,7 +97,7 @@
         
         .message:not(.own) .texts p {
             padding: 10px;
-            background-color: rgba(17, 25, 40, 0.3);
+            background-color: rgba(67, 96, 152, 0.155);
             border-radius: 10px;
             word-break: break-word;
             max-width: fit-content;
@@ -173,7 +173,7 @@
         }
 
         .message.own .texts p {
-            background-color: #305e635a;
+            background-color: #76aeb45a;
             color: #ffffff;
         }
 
